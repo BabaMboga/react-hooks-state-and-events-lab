@@ -1,6 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
+
 
 function Item({ name, category }) {
+
+  const [isInCart, setIsInCart] = useState(false);
+
+  const handleAddToCartButton = () =>{
+    setIsInCart(!isInCart);
+
+    const liClass = isInCart ?
+  }
   return (
     <li className="">
       <span>{name}</span>
